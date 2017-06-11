@@ -46,9 +46,11 @@ class FeatFooter extends Component{
       "https://joseguerrero.surge.sh/"
     ]
 
+    const year = new Date().getFullYear()
+
     return(
       <div style={styles.holder}>
-        <h3 style={styles.text}>© 2017 José Guerrero</h3>
+        <h3 style={styles.text}>© {year} José Guerrero</h3>
         <div style={styles.icons}>
           <SocialIcon url={urls[0]} color="#E1E8E1" style={styles.icons.icon} />
           <SocialIcon url={urls[1]} color="#E1E8E1" style={styles.icons.icon} />
