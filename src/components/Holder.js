@@ -4,6 +4,7 @@ import Radium from 'radium'
 
 //components
 import Timer from './Timer'
+import FeatFooter from './FeatFooter'
 
 class Holder extends Component {
 
@@ -44,6 +45,7 @@ class Holder extends Component {
       <div style={styles.fondo}>
         <h1 style={styles.head}>Las vaciones <br style={styles.break}/> terminan en</h1>
         <Timer deadLine= "Aug 21, 2017 00:00:00"/>
+        <FeatFooter/>
       </div>
     )
   }

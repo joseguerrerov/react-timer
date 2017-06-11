@@ -49,17 +49,22 @@ class Timer extends Component {
         display: 'flex',
         alignItems: 'center',
       },
+      equals: {
+        '@media(max-width: 768px)':{
+          fontSize: '1em'
+        },
+      }
     }
 
     return(
       <div style={styles.holder}>
         <div style={styles.timer}>
           <Box time="Dias" value={this.state.days}/>
-          <h2>:</h2>
+          <h2 style={styles.equals}>:</h2>
           <Box time= 'Horas' value={this.state.hours}/>
-          <h2>:</h2>
+          <h2 style={styles.equals}>:</h2>
           <Box time= 'Minutos' value={this.state.minutes}/>
-          <h2>:</h2>
+          <h2 style={styles.equals}>:</h2>
           <Box time= 'Segundos' value={this.state.seconds}/>
         </div>
       </div>
